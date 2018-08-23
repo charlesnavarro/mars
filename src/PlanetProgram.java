@@ -81,39 +81,6 @@ public class PlanetProgram extends JFrame {
 		manIcon = new ImageIcon(this.getClass().getResource("Man.png"));
 		womanIcon = new ImageIcon(this.getClass().getResource("Woman.png"));
 		
-		btnLion = new JButton("");
-		lionIcon = new ImageIcon(this.getClass().getResource("Lion.png"));
-		btnLion.setIcon(lionIcon);
-		btnLion.setBounds(771, 0, 97, 99);
-		optionsPane.add(btnLion);
-		
-		btnCow = new JButton("");
-		cowIcon = new ImageIcon(this.getClass().getResource("Cow.png"));
-		btnCow.setIcon(cowIcon);
-		btnCow.setBounds(883, 0, 97, 99);
-		optionsPane.add(btnCow);
-		
-		btnGrain = new JButton("");
-		grainIcon = new ImageIcon(this.getClass().getResource("Grain.png"));
-		btnGrain.setIcon(grainIcon);
-		btnGrain.setBounds(996, 0, 97, 99);
-		optionsPane.add(btnGrain);
-		
-		btnWoman = new JButton("");
-		btnWoman.setBounds(662, 0, 97, 99);
-		optionsPane.add(btnWoman);
-		btnWoman.setIcon(womanIcon);
-		
-		btnMan = new JButton("");
-		btnMan.setBounds(553, 0, 97, 99);
-		optionsPane.add(btnMan);
-		btnMan.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-			}
-		});
-		btnMan.setIcon(manIcon);
-		
-		
 		earthLabel = new JLabel("");
 		earthIcon = new ImageIcon(this.getClass().getResource("Earth.png"));
 		earthLabel.setIcon(earthIcon);
@@ -168,31 +135,87 @@ public class PlanetProgram extends JFrame {
 		manMarsLbl.setIcon(manIcon);
 		manMarsLbl.setBounds(920, 620, 256, 281);
 		contentPane.add(manMarsLbl);
+		manMarsLbl.setVisible(false);
 		
 		womanMarsLbl = new JLabel("");
 		womanIcon = new ImageIcon(this.getClass().getResource("Woman.png"));
 		womanMarsLbl.setIcon(womanIcon);
 		womanMarsLbl.setBounds(1020, 620, 256, 281);
 		contentPane.add(womanMarsLbl);
+		womanMarsLbl.setVisible(false);
 		
 		lionMarsLbl = new JLabel("");
 		lionIcon = new ImageIcon(this.getClass().getResource("Lion.png"));
 		lionMarsLbl.setIcon(lionIcon);
 		lionMarsLbl.setBounds(1120, 620, 256, 281);
 		contentPane.add(lionMarsLbl);
+		lionMarsLbl.setVisible(false);
 		
 		cowMarsLbl = new JLabel("");
 		cowIcon = new ImageIcon(this.getClass().getResource("Cow.png"));
 		cowMarsLbl.setIcon(cowIcon);
 		cowMarsLbl.setBounds(1220, 620, 256, 281);
 		contentPane.add(cowMarsLbl);
+		cowMarsLbl.setVisible(false);
 		
 		grainMarsLbl = new JLabel("");
 		grainIcon = new ImageIcon(this.getClass().getResource("Grain.png"));
 		grainMarsLbl.setIcon(grainIcon);
 		grainMarsLbl.setBounds(1320, 620, 256, 281);
 		contentPane.add(grainMarsLbl);
+		grainMarsLbl.setVisible(false);
 		
+		btnMan = new JButton("");
+		btnMan.setBounds(553, 0, 97, 99);
+		optionsPane.add(btnMan);
+		btnMan.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				manMarsLbl.setVisible(true);
+			}
+		});
+		btnMan.setIcon(manIcon);
+
+		btnWoman = new JButton("");
+		btnWoman.setBounds(662, 0, 97, 99);
+		optionsPane.add(btnWoman);
+		btnWoman.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				womanMarsLbl.setVisible(true);
+			}
+		});
+		btnWoman.setIcon(womanIcon);
 		
+		btnLion = new JButton("");
+		lionIcon = new ImageIcon(this.getClass().getResource("Lion.png"));
+		btnLion.setIcon(lionIcon);
+		btnLion.setBounds(771, 0, 97, 99);
+		btnLion.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				lionMarsLbl.setVisible(true);
+			}
+		});
+		optionsPane.add(btnLion);
+		
+		btnCow = new JButton("");
+		cowIcon = new ImageIcon(this.getClass().getResource("Cow.png"));
+		btnCow.setIcon(cowIcon);
+		btnCow.setBounds(883, 0, 97, 99);
+		btnCow.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				cowMarsLbl.setVisible(true);
+			}
+		});
+		optionsPane.add(btnCow);
+		
+		btnGrain = new JButton("");
+		grainIcon = new ImageIcon(this.getClass().getResource("Grain.png"));
+		btnGrain.setIcon(grainIcon);
+		btnGrain.setBounds(996, 0, 97, 99);
+		btnGrain.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				grainMarsLbl.setVisible(true);
+			}
+		});
+		optionsPane.add(btnGrain);
 	}
 }
