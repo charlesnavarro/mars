@@ -23,7 +23,9 @@ public class PlanetProgram extends JFrame {
 
 	private JPanel contentPane, optionsPane;
 	private ImageIcon earthIcon, marsIcon, manIcon, womanIcon, lionIcon, cowIcon, grainIcon, spaceshipIcon;
-	private JLabel earthLabel, marsLabel, passNumLabel, passengersLabel, spaceshipLabel;
+	private JLabel earthLabel, marsLabel, passNumLabel, passengersLabel, spaceshipLabel,
+					manEarthLbl, womanEarthLbl, lionEarthLbl, cowEarthLbl, grainEarthLbl,
+					manMarsLbl, womanMarsLbl, lionMarsLbl, cowMarsLbl, grainMarsLbl;
 	private JComboBox numberCmb, passengersCmb;
 	private JButton btnMan, btnWoman, btnLion, btnCow, btnGrain;
 	
@@ -122,16 +124,74 @@ public class PlanetProgram extends JFrame {
 		marsLabel.setBackground(new Color(0, 0, 128));
 		marsIcon = new ImageIcon(this.getClass().getResource("Mars.png"));
 		marsLabel.setIcon(marsIcon);
-		marsLabel.setBounds(878, 0, 733, 912);
+		marsLabel.setBounds(878, -63, 733, 912);
 		contentPane.add(marsLabel);
 		
 		spaceshipLabel = new JLabel("");
 		spaceshipIcon = new ImageIcon(this.getClass().getResource("Spaceship.png"));
 		spaceshipLabel.setIcon(spaceshipIcon);
-		spaceshipLabel.setBounds(648, 328, 234, 248);
+		spaceshipLabel.setBounds(626, 303, 256, 281);
 		contentPane.add(spaceshipLabel);
 		
+		manEarthLbl = new JLabel("");
+		manIcon = new ImageIcon(this.getClass().getResource("Man.png"));
+		manEarthLbl.setIcon(manIcon);
+		manEarthLbl.setBounds(20, 620, 256, 281);
+		contentPane.add(manEarthLbl);
 		
+		womanEarthLbl = new JLabel("");
+		womanIcon = new ImageIcon(this.getClass().getResource("Woman.png"));
+		womanEarthLbl.setIcon(womanIcon);
+		womanEarthLbl.setBounds(120, 620, 256, 281);
+		contentPane.add(womanEarthLbl);
+		
+		lionEarthLbl = new JLabel("");
+		lionIcon = new ImageIcon(this.getClass().getResource("Lion.png"));
+		lionEarthLbl.setIcon(lionIcon);
+		lionEarthLbl.setBounds(220, 620, 256, 281);
+		contentPane.add(lionEarthLbl);
+		
+		cowEarthLbl = new JLabel("");
+		cowIcon = new ImageIcon(this.getClass().getResource("Cow.png"));
+		cowEarthLbl.setIcon(cowIcon);
+		cowEarthLbl.setBounds(320, 620, 256, 281);
+		contentPane.add(cowEarthLbl);
+		
+		grainEarthLbl = new JLabel("");
+		grainIcon = new ImageIcon(this.getClass().getResource("Grain.png"));
+		grainEarthLbl.setIcon(grainIcon);
+		grainEarthLbl.setBounds(420, 620, 256, 281);
+		contentPane.add(grainEarthLbl);
+		
+		manMarsLbl = new JLabel("");
+		manIcon = new ImageIcon(this.getClass().getResource("Man.png"));
+		manMarsLbl.setIcon(manIcon);
+		manMarsLbl.setBounds(920, 620, 256, 281);
+		contentPane.add(manMarsLbl);
+		
+		womanMarsLbl = new JLabel("");
+		womanIcon = new ImageIcon(this.getClass().getResource("Woman.png"));
+		womanMarsLbl.setIcon(womanIcon);
+		womanMarsLbl.setBounds(1020, 620, 256, 281);
+		contentPane.add(womanMarsLbl);
+		
+		lionMarsLbl = new JLabel("");
+		lionIcon = new ImageIcon(this.getClass().getResource("Lion.png"));
+		lionMarsLbl.setIcon(lionIcon);
+		lionMarsLbl.setBounds(1120, 620, 256, 281);
+		contentPane.add(lionMarsLbl);
+		
+		cowMarsLbl = new JLabel("");
+		cowIcon = new ImageIcon(this.getClass().getResource("Cow.png"));
+		cowMarsLbl.setIcon(cowIcon);
+		cowMarsLbl.setBounds(1220, 620, 256, 281);
+		contentPane.add(cowMarsLbl);
+		
+		grainMarsLbl = new JLabel("");
+		grainIcon = new ImageIcon(this.getClass().getResource("Grain.png"));
+		grainMarsLbl.setIcon(grainIcon);
+		grainMarsLbl.setBounds(1320, 620, 256, 281);
+		contentPane.add(grainMarsLbl);
 		
 		
 	}
